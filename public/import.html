@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Import</title>
+    <style>
+        img{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Importing</h1>
+        <p>In this file I am going to import Files, Images and Videos. Also I am going to show content calling feature on
+            same page, as this is also a kind of import as per me. So starting wtih this function, I am going to navigate 
+            to the import function of files, Images and Video.
+        </p>
+    </main>
+
+    <div>
+        <h2>Navigating to:</h2>
+        <ol>
+            <li>
+                <a href="#files">Import Files</a>
+            </li>
+            <li>
+                <a href="#images">Import Images</a>
+            </li>
+            <li>
+                <a href="#video">Import Video</a>
+            </li>
+        </ol>
+    </div>
+
+    <div>
+        <h2 id="files">Import files</h2>
+        <p>Here, I am going to use anchor element. This element uses an attribute "href" to link the source url. The content of this element will direct the user to that source URL. In this import, I have linked the Index File. This means by clicking the link, you are going to redirected to the Index page which basically is the first page of my assignment.</p>
+    </div>
+    <nav><a href="c:/Users/deepak2/Desktop/html.portfolio/index.html">Index</a></nav>
+
+    <div>
+        <h2 id="images">Import Images</h2>
+        <p>In this content, I am going to import an image from the server using image element. This element requires the location of the image for which I have used a url of the image. You can link any image from your own PC by using the location. Make sure to properly define the location. If the image is on desktop, you need to describe the proper location to the image or my personal suggestion is to send that image to same folder as of your html file. By this, You need not to decribe the whole location and only name is sufficient to call the image. </p>
+    </div>
+    <div>
+        <img src="https://www.androidguys.com/wp-content/uploads/2015/12/wave-wallpaper-background-511.jpg" alt=" ocean tide waves ">
+    </div>
+    <div>
+        <p>
+            It's important to resize the image. We can do this in CSS also. But for now, I am going to illustrate
+            this in a simple way for the fact that we can do thsi on HTML also.
+        </p>
+    </div>
+    <div>
+        <p>
+            One more important thing. Makke sure to use alt attribute while importing the image. Although, this 
+            won't create any change in the method of importhing the image. But this will enable the feature in which,
+            our differently abled friends, who are using the screen reading software and are unable to see the images
+            can understand what's the content of that image. So, If you are using a Screen reader, you can hear 
+            <strong>"Ocean Tide waves"</strong>. Also, I have used strong element in this paragraph to make this 
+            content noticable for the screen readers.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="video">importing Videos</h2>
+        <p> To import a video, I have used iframe element. However, we need to use attributes like title and allow to define the name of the video
+            and what function can be allowed for this video to work with. For example, Fast forward, or picture-in-picture mode.
+        </p>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/frPlxOiCJQ4" title="Deep Focus Music To Improve Concentration - 12 Hours of Ambient Study Music to Concentrate #600" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>">
+    </div>
+</body>
+</html>

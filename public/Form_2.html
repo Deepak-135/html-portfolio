@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bravo</title>
+    <style>
+        form{
+            background-color: darkslateblue;
+            color: aliceblue;
+            text-align: center;
+            border: 1px;
+            border-color: black;
+            border-radius: 5px;
+            width: 500px;
+            height: auto;
+        }
+        .heading{
+            background-color: brown;
+            color: antiquewhite;
+            border: 1px;
+            border-radius: 5px;
+            width: max-content;
+            border-color: black;
+            text-indent: 5px;
+            text-align: right;
+
+        }
+        .block{
+            width: max-content;
+            height: fit-content;
+            border: 1px;
+            text-align: center;
+            border-radius: 5px;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Now you are going to say that I have done nothing. Because this will accept any password and any username.
+        Well, that's just because I haven't learn HTML upto that level. MOreover, I actually don't know if HTML 
+        can do this type of function or not. And that's why, I would like to enlighten you that Java Script is in
+        use. While HTML defines the basic input, Java does all the background performance. Therefore, When it 
+        comes to function check ifthe username and passowrd is correct or not, Java script is used.</p>
+    <form action="submit.html">
+        <fieldset class="block">
+            <legend>This is the content of form</legend>
+        </fieldset>
+        <div>
+            <label for="name">Name <br></label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+        <div>
+            <fieldset>
+                <legend>What's your favorite food?</legend>
+                <select name="food" id="food">
+                    <div>
+                        <option value="1">Italian</option>
+                    </div>
+                    <div>
+                        <option value="2">Indian</option>
+                    </div>
+                    <div>
+                        <option value="3">French</option>
+                    </div>
+                    <div>
+                        <option value="4">Thai</option>
+                    </div>
+                    <div>
+                        <option value="5">Chineze</option>
+                    </div>
+                    <div>
+                        <option value="6" selected>Any</option>
+                    </div>
+                </select>
+            </fieldset>
+        </div>
+        <div> 
+            <label for="agree">
+                I love HTML and would like to learn more about it. <br>
+                How much this quote relavent to you?
+            </label>
+            <input type="range" name="agree" id="agree" min="0" max="5" value="0">
+            <p><br></p>
+        </div>
+        <fieldset class=" block">
+            <legend>What do you like to have?</legend>
+            <div class="heading">
+                <div>
+                    <label for="tea">Tea</label>
+                    <input type="radio" value="1" id="tea" name="drink" checked>
+                </div>
+                <div>
+                    <label for="coffee">coffee</label>
+                    <input type="radio" value="2" id="coffee" name="drink">
+                </div>
+                <div>
+                    <label for="Juice">Juice</label>
+                    <input type="radio" value="3" id="Juice" name="drink">
+                </div>
+                <div>
+                    <label for="Cold-drink">Cold-drink</label>
+                    <input type="radio" value="4" id="Cold-drink" name="drink">
+                </div>
+                <div>
+                    <label for="Water">Water</label>
+                    <input type="radio" value="5" id="Water" name="drink">
+                </div>
+            </div>
+        </fieldset>
+        <div>
+            <label for="Qty">How many serves do you want?</label>
+            <input type="number" name="Qty" id="Qty" min="0" max="5" value="1">
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>

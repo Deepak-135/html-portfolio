@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <style>
+        form{
+            background-color: darkslateblue;
+            color: aliceblue;
+            border: 1px;
+            border-color: black;
+            border-radius: 5px;
+            width: 500px;
+            height: auto;
+        }
+        .heading{
+            background-color: brown;
+            color: antiquewhite;
+            border: 1px;
+            border-radius: 5px;
+            width: auto;
+            border-color: black;
+            text-indent: 5px;
+        }
+        .block{
+            width: max-content;
+            height: fit-content;
+            border: 1px;
+            border-radius: 5px;
+            border-color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="Form_2.html">
+        <fieldset class="block">
+            <legend class="heading">Practice form building</legend>
+        </fieldset>
+        <div>
+            <label for="user">Username</label>
+            <input type="text" placeholder="Username" id="user" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" required>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
